@@ -5,6 +5,7 @@ from ship import Ship
 import game_functions as gf
 from pygame.sprite import Group
 
+
 def run_game():
     pygame.init()
     ai_settings = Settings()
@@ -21,5 +22,6 @@ def run_game():
         gf.update_bullet(bullets)
         # print(len(bullets))
         gf.update_screen(ai_settings, screen, ship, bullets)
+
 
 run_game()
